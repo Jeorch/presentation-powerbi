@@ -1,0 +1,125 @@
+<!doctype html>
+
+<!--
+  This is a simple example / template impress.js slide show. The goal is to be
+  easier to read for a first timer than the official and very feature rich
+  demo by bartaz (http://bartaz.github.io/impress.js/). It's also a very
+  traditional presentation that looks like slides (square screens with bullet
+  points...), again to make a first timer feel more at home. From this simple
+  presentation you can then go on to more powerful impress.js presentations!
+
+  This example is hopefully helpful for people that want to create both
+  simple and (eventually) awesome presentations in impress.js and comfortable
+  doing that directly in HTML.
+
+  By: @henrikingo (Still based on the HTML from bartaz' demo.)
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>PowerBI 入门 | by Jeorch czhang@data-pharbers</title>
+    <meta name="description" content="Explore impress.js in 3D" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="..\..\css\impress-common.css" rel="stylesheet" />
+    <link href="css/3D-rotations.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="2000">
+
+
+    <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
+         <h1>A Simple Presentation for PowerBI</h1>
+    </div>
+    <div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
+         <p>谈到商业智能（BI）分析软件时，两个主要的行业领导者： <br>Power BI 和 Tableau。<br><br>
+           Power BI 和 Tableau 都提供了强大的可视化，在模板方面，Power BI提供29种标准视觉效果，而Tableau在其Show Me功能中提供24种。<br><br>
+           但这不是一场数字游戏。两种服务的标准视觉效果的元素可以组合和修改，从而导致数千种组合。
+           </p>
+    </div>
+
+    <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
+         data-goto-prev="step-8">
+         <p>为什么要使用 Power BI ？</p>
+         <ul>
+              <li>提高效率</li>
+              <li>降低成本</li>
+              <li>云BI，嵌入式分析</li>
+              <li>发布、共享与协作</li>
+         </ul>
+    </div>
+
+    <div id="step-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+      <figure> <p>使用 Power BI <br>简化你的工作<br>提高你的工作效率</p>
+        <img src="images/power-bi-data-overload.png" width=100% height=100% />
+      </figure>
+    </div>
+
+    <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
+        <p>使用者</p>
+        <ul>
+             <li>在浏览器上使用 Power BI 服务</li>
+             <li>浏览报表</li>
+             <li>筛选、保存与共享</li>
+        </ul>
+    </div>
+
+    <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
+        <p>数据科学家或设计人员</p>
+        <ul>
+            <li>在本地使用 Power BI Desktop 进行数据建模</li>
+            <li>设计报表与发布</li>
+        </ul>
+    </div>
+
+    <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
+        <p>开发人员</p>
+        <ul>
+          <li>使用 Azure 云服务平台 管理用户和数据</li>
+          <li>使用 PowerBI Embedded 嵌入图表</li>
+        </ul>
+    </div>
+
+    <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
+        <p>简单演示</p>
+        <ul>
+          <li>使用者</li>
+          <li>数据科学家或设计人员</li>
+          <li>开发人员</li>
+        </ul>
+    </div>
+
+    <div id="step-7" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
+        <figure> <p>PowerBI 架构图</p>
+          <img src="images/powerbi-arch.jpg" width=100% height=100% />
+        </figure>
+    </div>
+
+    <div id="step-8" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+         data-goto-next="step-1">
+         <p>下一次培训相关内容</p>
+         <ul>
+              <li>如何获取数据</li>
+              <li>进行数据建模</li>
+              <li>运用视觉对象</li>
+              <li>发布和共享</li>
+              <li>DAX介绍与应用</li>
+         </ul>
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
+
+<script type="text/javascript" src="../../js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
